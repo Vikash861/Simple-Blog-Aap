@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') -%>
+    <h1>Home</h1>
+    <p>
+        <%= content %>
+    </p>
+    <div>
+        <% blogPosts.forEach((item)=> { %>
+            <h2>
+                <%=item.title %>
+            </h2>
+            <p>
+                <%=item.content.split(" ").splice(0,15).join(" ") + " ... "%>
+                <a href="/post/<%=item.title%>" >Read more</a>
+            </p>
+            <% }) %>
+    </div>
+    <%- include('partials/footer.ejs') -%>
