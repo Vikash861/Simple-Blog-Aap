@@ -19,7 +19,7 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 
 // connection and schema of data 
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://admin-vikash:RolJZuhfo37UloU8@cluster0.ahs3o.mongodb.net/miniblog")
+mongoose.connect("");
     // .then(console.log("connect"))
     .catch((err) => console.log(err));
 
